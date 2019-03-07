@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A1C1E9EC96F8D558E06E5F /* libPods-AlgorithmDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF53E0E7E595AFB552D252 /* libPods-AlgorithmDemo.a */; };
 		C71126F4222F617300A03657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C71126F3222F617300A03657 /* AppDelegate.m */; };
 		C71126F7222F617300A03657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71126F6222F617300A03657 /* ViewController.m */; };
 		C71126FA222F617300A03657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71126F8222F617300A03657 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85DF53E0E7E595AFB552D252 /* libPods-AlgorithmDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlgorithmDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10944C2C7DF3B186FDEEF0 /* Pods-AlgorithmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorithmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgorithmDemo/Pods-AlgorithmDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C71126EF222F617300A03657 /* AlgorithmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71126F2222F617300A03657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C71126F3222F617300A03657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		C7112712222F617500A03657 /* AlgorithmDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7112716222F617500A03657 /* AlgorithmDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmDemoUITests.m; sourceTree = "<group>"; };
 		C7112718222F617500A03657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF99CE5962C6F1AD31672CA /* Pods-AlgorithmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorithmDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlgorithmDemo/Pods-AlgorithmDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A1C1E9EC96F8D558E06E5F /* libPods-AlgorithmDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B66B2DA52E2A284CDFC4B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85DF53E0E7E595AFB552D252 /* libPods-AlgorithmDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B41C973342804F9EE5540C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFF99CE5962C6F1AD31672CA /* Pods-AlgorithmDemo.debug.xcconfig */,
+				BC10944C2C7DF3B186FDEEF0 /* Pods-AlgorithmDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C71126E6222F617300A03657 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				C711270A222F617500A03657 /* AlgorithmDemoTests */,
 				C7112715222F617500A03657 /* AlgorithmDemoUITests */,
 				C71126F0222F617300A03657 /* Products */,
+				B9B41C973342804F9EE5540C /* Pods */,
+				1B66B2DA52E2A284CDFC4B11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C711271B222F617500A03657 /* Build configuration list for PBXNativeTarget "AlgorithmDemo" */;
 			buildPhases = (
+				8E552D045F177F14BD70EF58 /* [CP] Check Pods Manifest.lock */,
 				C71126EB222F617300A03657 /* Sources */,
 				C71126EC222F617300A03657 /* Frameworks */,
 				C71126ED222F617300A03657 /* Resources */,
@@ -256,6 +281,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E552D045F177F14BD70EF58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlgorithmDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C71126EB222F617300A03657 /* Sources */ = {
@@ -433,6 +483,7 @@
 		};
 		C711271C222F617500A03657 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF99CE5962C6F1AD31672CA /* Pods-AlgorithmDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +500,7 @@
 		};
 		C711271D222F617500A03657 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC10944C2C7DF3B186FDEEF0 /* Pods-AlgorithmDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
